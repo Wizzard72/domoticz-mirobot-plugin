@@ -14,7 +14,10 @@ from gevent.queue import Queue
 from gevent.pool import Group
 from gevent.server import StreamServer
 import argparse
-from miio import Vacuum, DeviceException
+from miio import (  # pylint: disable=import-error
+    Vacuum,
+    DeviceException,
+    )
 from msgpack import Unpacker
 import time
 import signal
