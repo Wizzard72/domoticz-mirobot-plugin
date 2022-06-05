@@ -15,9 +15,10 @@ from gevent.pool import Group
 from gevent.server import StreamServer
 import argparse
 from miio import (
-    #Vacuum,
     RoborockVacuum,
     DeviceException,
+    MODELS_VACUUM,
+    ROCKROBO_GENERIC,
     )
 from msgpack import Unpacker
 import time
