@@ -117,4 +117,4 @@ sudo systemctl restart domoticz.service
 
 ### How to obtain device Token
 
-Check the [instruction](https://github.com/rytilahti/python-miio#finding-the-token)
+Check the [instruction](https://github.com/PiotrMachowski/Xiaomi-cloud-tokens-extractor)
