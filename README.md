@@ -29,6 +29,8 @@ Plugin provides: Status, Control, Fan Level, Battery, Care status devices
 
 ## Installation
 
+SSH login to the Raspberry Pi 4 with Putty for example (only tested with RPI4)
+
 Before installation plugin check the `python3`, `python3-dev`, `pip3` is installed for Domoticz plugin system:
 
 ```sudo apt install python3 python3-dev python3-pip```
