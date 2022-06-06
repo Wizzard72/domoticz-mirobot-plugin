@@ -105,17 +105,15 @@ sudo systemctl restart domoticz.service
 
 ## Screenshots
 
-![status_unit](https://github.com/Wizzard72/domoticz-mirobot-plugin/blob/master/image/RoborockControl.png)
-![control_unit](https://user-images.githubusercontent.com/93999/29568435-13645e10-8759-11e7-92d8-5fe130912c78.png)
-
-![fan_level](https://user-images.githubusercontent.com/93999/29668575-6906ea22-88e9-11e7-8508-8f0ff48e2f78.png)
-![fan_level2](https://user-images.githubusercontent.com/93999/29713051-86cd023c-89a5-11e7-83cc-5953b8cbbfa5.png)
-
-![care1](https://user-images.githubusercontent.com/93999/32418537-08d3c918-c27d-11e7-89e9-10daf79bcdb4.png)
-![care2](https://user-images.githubusercontent.com/93999/32418538-08ef7e10-c27d-11e7-9ff8-8dfff1c20377.png)
-
-![bat](https://user-images.githubusercontent.com/93999/29769383-c8202814-8bf2-11e7-86b2-3629bfc63dc0.png)
-
+![status](https://github.com/Wizzard72/domoticz-mirobot-plugin/blob/master/image/RoborockStatus.png)
+![control](https://github.com/Wizzard72/domoticz-mirobot-plugin/blob/master/image/RoborockControl.png)
+![fan level](https://github.com/Wizzard72/domoticz-mirobot-plugin/blob/master/image/RoborockFanLevel.png)
+![battery](https://github.com/Wizzard72/domoticz-mirobot-plugin/blob/master/image/RoborockBattery.png)
+![care sensors](https://github.com/Wizzard72/domoticz-mirobot-plugin/blob/master/image/RoborockCareSensors.png)
+![care main brush](https://github.com/Wizzard72/domoticz-mirobot-plugin/blob/master/image/RoborockCareMainBrush.png)
+![care care side brush](https://github.com/Wizzard72/domoticz-mirobot-plugin/blob/master/image/RoborockCareSideBrush.png)
+![care care filter](https://github.com/Wizzard72/domoticz-mirobot-plugin/blob/master/image/RoborockCareFilter.png)
+![care care reset control](https://github.com/Wizzard72/domoticz-mirobot-plugin/blob/master/image/RoboRockCareResetControl.png?raw=true)
 
 ### How to obtain device Token
 
