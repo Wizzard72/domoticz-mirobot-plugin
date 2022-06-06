@@ -78,7 +78,7 @@ CONTAINER ID   IMAGE                           COMMAND                  CREATED 
   test: got server reply {'error': None, 'state_code': 8, 'battery': 100, 'fan_level': 102, 'clean_seconds': 14, 'clean_area': 0.155, 'cmd': 'status'}
   ```
 
-  If server and test is ok, time to restart the Domoticz:
+  If container and test is ok, time to restart the Domoticz:
   ```
   sudo systemctl restart domoticz.service
   ```
