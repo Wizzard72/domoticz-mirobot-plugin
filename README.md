@@ -3,7 +3,7 @@
 
 This plugin uses the [Python-miio](https://github.com/rytilahti/python-miio) library.
 
-This plugin only works with the following container: https://github.com/Wizzard72/mirobot-miio-server
+This plugin only works with the following container: https://github.com/Wizzard72/mirobot-miio-server. Create container before this guide.
 
 
 ## How it works
@@ -35,65 +35,9 @@ Make sure you have libffi and openssl headers installed, you can do this on Debi
 
 ```sudo apt-get install libffi-dev libssl-dev```.
 
-Also do note that the setuptools version is too old for installing some requirements, so before trying to install this package you should update the setuptools with:
-
-```sudo pip3 install -U setuptools```.
-
-Also need to install virtualenv:
-
-```sudo pip3 install -U virtualenv```.
-
-Then go to plugins folder and clone repository:
-```
-cd domoticz/plugins
-git clone https://github.com/mrin/domoticz-mirobot-plugin.git xiaomi-mirobot
-cd xiaomi-mirobot
-virtualenv -p python3 .env
-source .env/bin/activate
-
-# and then:
-pip3 install -r pip_req.txt 
-# or pip3 install gevent msgpack-python python-miio==0.3.1
-```
-
-Since ```0.1.2``` need some prepare of **MIIO Server** to run as service:
-1. Open and edit miio_server.sh by vi/nano:
-```
-nano miio_server.sh
-
-# 1. Check and update absolute path to miio_server.py
-# 2. Update IP and TOKEN for robot
-# 3. Optional. Change MIIO server host-port bindings if need it
-
-# file miio_server.sh
-DAEMON_USER=root
-DAEMON=/home/pi/domoticz/plugins/xiaomi-mirobot/miio_server.py
-DAEMON_ARGS="192.168.1.12 476e6b70343055483230644c53707a12"
-DAEMON_ARGS="$DAEMON_ARGS --host 127.0.0.1 --port 22222"
-#
-```
-
-2. Check path to python3 ```which python3```. By default is ```/usr/bin/python3```. 
-If your path different than default, update miio_server.py first line with your path.
-```
-#!/usr/bin/python3
-```
-
-3. For run as system service:
-```
-sudo chmod +x miio_server.py
-sudo chmod +x miio_server.sh
-
-# check your path here:
-sudo ln -s /home/pi/domoticz/plugins/xiaomi-mirobot/miio_server.sh /etc/init.d/miio_server
-
-# add to startup
-sudo update-rc.d miio_server defaults
-sudo systemctl daemon-reload
-
-# if you want to remove from startup
-sudo update-rc.d -f miio_server remove
-```
+1. Container
+  Make sure the container is running
+3. 
 
 4. Run server and test script:
 ```
