@@ -76,12 +76,12 @@ CONTAINER ID   IMAGE                           COMMAND                  CREATED 
   test: sent request to server [status]
   test: reading response...
   test: got server reply {'error': None, 'state_code': 8, 'battery': 100, 'fan_level': 102, 'clean_seconds': 14, 'clean_area': 0.155, 'cmd': 'status'}
-```
+  ```
 
-If server and test is ok, time to restart the Domoticz:
-```
+  If server and test is ok, time to restart the Domoticz:
+  ```
   sudo systemctl restart domoticz.service
-```
+  ```
 
 Now go to **Setup** -> **Hardware** in your Domoticz interface and add type with name **Xiaomi Mi Robot Vacuum**.
 
