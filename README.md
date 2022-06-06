@@ -47,16 +47,31 @@ Make sure you have libffi and openssl headers installed, you can do this on Debi
 CONTAINER ID   IMAGE                           COMMAND                  CREATED        STATUS        PORTS                                                                                  NAMES
 3afb120b7e11   miio-mirobot:latest             "sh -c './miio_serve…"   27 hours ago   Up 27 hours   0.0.0.0:22222->22222/tcp, :::22222->22222/tcp                                          miio-mirobot
 ```
-3. 
+### Install plugin
 
-4. Run server and test script:
-```
-sudo service miio_server start
-sudo chmod +x test.py
-sudo ./test.py
-
-# to stop miio server service
-sudo service miio_server stop
+  SSH login to Domoticz with Putty for example
+  
+  ```
+  cd domoticz/plugins
+  git pull https://github.com/Wizzard72/domoticz-mirobot-plugin
+  cd domoticz-mirobot-plugin 
+  pip3 install msgpack-python
+  sudo systemctl stop domoticz.service
+  sudo systemctl start domoticz.service
+  ```
+  
+  Test theconnectivity to the vacuum cleaner
+  ```
+  chmod +x test.py
+  ./test.py
+  ```
+  
+  Output:
+  ```
+  test: trying connect to 127.0.0.1:22222
+  test: sent request to server [status]
+  test: reading response...
+  test: got server reply {'error': None, 'state_code': 8, 'battery': 100, 'fan_level': 102, 'clean_seconds': 14, 'clean_area': 0.155, 'cmd': 'status'}
 ```
 
 Also you can run MIIO Server manually and look log output:
