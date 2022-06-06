@@ -7,6 +7,8 @@ This plugin uses the [Python-miio](https://github.com/rytilahti/python-miio) lib
 
 This plugin only works with the following container: https://github.com/Wizzard72/mirobot-miio-server. Create container before this guide.
 
+Tested on a Raspberry Pi 4.
+
 
 ## How it works
 
