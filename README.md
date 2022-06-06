@@ -40,7 +40,9 @@ Make sure you have libffi and openssl headers installed, you can do this on Debi
   Make sure the container is running
   
   ```docker ps```
+  
   Output look like this:
+  
   ```
 CONTAINER ID   IMAGE                           COMMAND                  CREATED        STATUS        PORTS                                                                                  NAMES
 3afb120b7e11   miio-mirobot:latest             "sh -c './miio_serve…"   27 hours ago   Up 27 hours   0.0.0.0:22222->22222/tcp, :::22222->22222/tcp                                          miio-mirobot
