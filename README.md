@@ -31,11 +31,11 @@ Plugin provides: Status, Control, Fan Level, Battery, Care status devices
 
 Before installation plugin check the `python3`, `python3-dev`, `pip3` is installed for Domoticz plugin system:
 
-```sudo apt-get install python3 python3-dev python3-pip```
+```sudo apt install python3 python3-dev python3-pip```
 
 Make sure you have libffi and openssl headers installed, you can do this on Debian-based systems (like Rasperry Pi) with:
 
-```sudo apt-get install libffi-dev libssl-dev```.
+```sudo apt install libffi-dev libssl-dev```.
 
 ### Container
   
