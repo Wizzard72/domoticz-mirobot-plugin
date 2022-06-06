@@ -35,9 +35,15 @@ Make sure you have libffi and openssl headers installed, you can do this on Debi
 
 ```sudo apt-get install libffi-dev libssl-dev```.
 
-1. Container
+### Container
   
   Make sure the container is running
+  
+  ```docker ps```
+  ```
+CONTAINER ID   IMAGE                           COMMAND                  CREATED        STATUS        PORTS                                                                                  NAMES
+3afb120b7e11   miio-mirobot:latest             "sh -c './miio_serve…"   27 hours ago   Up 27 hours   0.0.0.0:22222->22222/tcp, :::22222->22222/tcp                                          miio-mirobot
+```
 3. 
 
 4. Run server and test script:
