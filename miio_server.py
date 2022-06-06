@@ -16,8 +16,6 @@ from gevent.server import StreamServer
 import argparse
 from miio import RoborockVacuum as Vacuum
 from miio import DeviceException
-    #MODELS_VACUUM
-    #ROCKROBO_GENERIC
 from msgpack import Unpacker
 import time
 import signal
