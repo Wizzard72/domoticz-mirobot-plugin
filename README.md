@@ -5,7 +5,7 @@ Originally created by: mrin/domoticz-mirobot-plugin (https://github.com/mrin/dom
 
 This plugin uses the [Python-miio](https://github.com/rytilahti/python-miio) library.
 
-This plugin only works with the following container: https://github.com/Wizzard72/mirobot-miio-server. Create container before this guide.
+This plugin only works with the following container: https://github.com/Wizzard72/mirobot-miio-server. Create container before following this guide.
 
 Tested on a Raspberry Pi 4.
 
