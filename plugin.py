@@ -4,7 +4,7 @@
 #       Author: wizzard72, 2022
 #       
 """
-<plugin key="xiaomi-mi-robot-vacuum" name="Xiaomi Mi Robot Vacuum" author="wizzard72" version="0.2" wikilink="https://github.com/Wizzard72/domoticz-mirobot-plugin" externallink="">
+<plugin key="xiaomi-mi-robot-vacuum" name="Xiaomi Mi Robot Vacuum" author="wizzard72" version="1.0" wikilink="https://github.com/Wizzard72/domoticz-mirobot-plugin" externallink="">
     <params>
         <param field="Mode6" label="MIIOServer host:port" width="200px" required="true" default="127.0.0.1:22222"/>
         <param field="Mode2" label="Update interval (sec)" width="30px" required="true" default="15"/>
