@@ -56,8 +56,6 @@ CONTAINER ID   IMAGE                           COMMAND                  CREATED 
   git pull https://github.com/Wizzard72/domoticz-mirobot-plugin
   cd domoticz-mirobot-plugin 
   pip3 install msgpack-python
-  sudo systemctl stop domoticz.service
-  sudo systemctl start domoticz.service
   ```
   
   Test theconnectivity to the vacuum cleaner
@@ -74,17 +72,9 @@ CONTAINER ID   IMAGE                           COMMAND                  CREATED 
   test: got server reply {'error': None, 'state_code': 8, 'battery': 100, 'fan_level': 102, 'clean_seconds': 14, 'clean_area': 0.155, 'cmd': 'status'}
 ```
 
-Also you can run MIIO Server manually and look log output:
-```
-sudo ./miio_server.py 192.168.1.12 476e6b70343055483230644c53707a12 --host 127.0.0.1 --port 22222
-
-# then you can run test
-sudo ./test.py
-```
-
 If server and test is ok, time to restart the Domoticz:
 ```
-sudo service domoticz.sh restart
+  sudo systemctl restart domoticz.service
 ```
 
 Now go to **Setup** -> **Hardware** in your Domoticz interface and add type with name **Xiaomi Mi Robot Vacuum**.
@@ -104,13 +94,13 @@ If you want to change ```Fan Level Type``` just disable hardware, update type an
 ## How to update plugin
 
 ```
-cd domoticz/plugins/xiaomi-mirobot
+cd domoticz/plugins/domoticz-mirobot-plugin
 git pull
 ```
 
 Restart the Domoticz service
 ```
-sudo service domoticz.sh restart
+sudo systemctl restart domoticz.service
 ```
 
 ## Screenshots
