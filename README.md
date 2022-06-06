@@ -1,6 +1,8 @@
 
 # Xiaomi Mi Robot Vacuum - Domoticz Python plugin
 
+Originally created by: mrin/domoticz-mirobot-plugin(https://github.com/mrin/domoticz-mirobot-plugin)
+
 This plugin uses the [Python-miio](https://github.com/rytilahti/python-miio) library.
 
 This plugin only works with the following container: https://github.com/Wizzard72/mirobot-miio-server. Create container before this guide.
