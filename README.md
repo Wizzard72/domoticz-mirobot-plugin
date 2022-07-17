@@ -1,3 +1,4 @@
+# !!!! Final version - I'm not maintaining this plugin anymore. Recently migrated to Home Assistant.
 
 # Xiaomi Mi Robot Vacuum - Domoticz Python plugin
 
